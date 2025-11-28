@@ -81,6 +81,7 @@ body > .header .menu.section-container .dropdown {
 
 body > .header .menu.section-container .dropdown.show {
   height: 360px;
+  height: auto;
 }
 
 body > .header .menu.section-container .dropdown button {
@@ -172,6 +173,11 @@ body > .content .section-container p {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+}
+
+body > .content .section-container p.description {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 body > .content .section-container .image-container {
