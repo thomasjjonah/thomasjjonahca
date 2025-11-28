@@ -37,6 +37,10 @@ function toggleMenu() {
       dropdown_buttons_text = dropdown_buttons.text(),
       home_button = $('.header > .menu .dropdown .home'),
       home_section_container = $('body > .content .section-container.home'),
+      latest_photographs_button = $('.header > .menu .dropdown .latest-photographs'),
+      latest_photographs_section_container = $('body > .content .section-container.latest-photographs'),
+      mixed_reality_button = $('.header > .menu .dropdown .mixed-reality'),
+      mixed_reality_section_container = $('body > .content .section-container.mixed-reality'),
       tableaux_button = $('.header > .menu .dropdown .tableaux'),
       tableaux_section_container = $('body > .content .section-container.tableaux'),
       photo_series_button = $('.header > .menu .dropdown .photo-series'), 
@@ -75,6 +79,16 @@ function toggleMenu() {
       
       if ($(this).hasClass('home')) {
         $('body > .content .section-container.home').addClass('show');
+      }
+      
+      if ($(this).hasClass('latest-photographs')) {
+        $('body > .content .section-container.latest-photographs').addClass('show');
+        header_title.addClass('short');
+      }
+      
+      if ($(this).hasClass('mixed-reality')) {
+        $('body > .content .section-container.mixed-reality').addClass('show');
+        header_title.addClass('short');
       }
       
       if ($(this).hasClass('tableaux')) {
